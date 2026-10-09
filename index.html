@@ -1,297 +1,175 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+```
+<title>NFC Digital Card</title>
 
-    <title>NFC Digital Card</title>
+<link rel="stylesheet" href="design.css">
 
-    <link rel="stylesheet" href="design.css">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+```
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-
 
 <body>
 
-    <!-- =================================
-         OPTIONAL VIDEO BACKGROUND
+```
+<!-- OPTIONAL VIDEO BACKGROUND -->
+<!--
+<video class="background-video"
+       autoplay
+       muted
+       loop
+       playsinline>
+    <source src="background.mp4" type="video/mp4">
+</video>
+-->
 
-         Delete this section if you only
-         want to use a background picture.
-    ================================== -->
+<!-- BACKGROUND OVERLAY -->
+<div class="background-overlay"></div>
 
-    <!--
-    <video class="background-video"
-           autoplay
-           muted
-           loop
-           playsinline>
+<!-- MAIN MOBILE CARD -->
+<main class="mobile">
 
-        <source src="background.mp4"
-                type="video/mp4">
+    <!-- PROFILE -->
+    <section class="profile">
 
-    </video>
-    -->
+        <img src="pf.png"
+             alt="Profile Picture"
+             class="profile-picture">
 
+        <h1>Kristine Joy Angeles</h1>
 
-    <!-- =================================
-         BACKGROUND OVERLAY
-    ================================== -->
+        <p class="subtitle"></p>
 
-    <div class="background-overlay"></div>
+    </section>
 
+    <!-- CONTENT -->
+    <section class="content">
 
-    <!-- =================================
-         MAIN MOBILE CARD
-    ================================== -->
+        <!-- ABOUT -->
+        <div class="about">
 
-    <main class="mobile">
-
-
-        <!-- =================================
-             PROFILE
-        ================================== -->
-
-        <section class="profile">
-
-            <img src="pf.png"
-                 alt="Profile Picture"
-                 class="profile-picture">
-
-            <h1>
-                Kristine Joy Angeles
-            </h1>
-
-            <p class="subtitle">
-                
-            </p>
-
-        </section>
-
-
-        <!-- =================================
-             CONTENT
-        ================================== -->
-
-        <section class="content">
-
-
-            <!-- =================================
-                 ABOUT
-            ================================== -->
-
-            <div class="about">
-
-                <h2>
-                    Hello! 👋
-                </h2>
-
-                <p>
-                    Welcome to my digital NFC card.
-                    Connect with me using the links below.
-                </p>
-
-            </div>
-
-
-            <!-- =================================
-                 CONTACT / SOCIAL LINKS
-            ================================== -->
-
-            <div class="links">
-
-
-                <!-- FACEBOOK -->
-                <a href="https://www.facebook.com/kristine.joy.angeles.2024/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="button">
-
-                    <i class="fa-brands fa-facebook"></i>
-
-                    <span>
-                        Facebook
-                    </span>
-
-                </a>
-
-
-                <!-- INSTAGRAM -->
-                <a href="https://www.instagram.com/_kristinejoyangeles"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="button">
-
-                    <i class="fa-brands fa-instagram"></i>
-
-                    <span>
-                        Instagram
-                    </span>
-
-                </a>
-
-
-                <!-- =================================
-                     GCASH
-                ================================== -->
-
-                <a href="#gcash"
-                   class="button">
-
-                    <i class="fa-solid fa-money-bill-transfer"></i>
-
-                    <span>
-                        Send via GCash
-                    </span>
-
-                </a>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- =================================
-             FOOTER
-        ================================== -->
-
-        <footer>
-
-            Tap • Connect • Share
-
-        </footer>
-
-
-    </main>
-
-
-    <!-- =================================
-         GCASH QR POPUP
-    ================================== -->
-
-    <div id="gcash"
-         class="qr-modal">
-
-
-        <!-- QR CARD -->
-
-        <div class="qr-box">
-
-
-            <!-- CLOSE BUTTON -->
-
-            <a href="#"
-               class="qr-close"
-               aria-label="Close">
-
-                &times;
-
-            </a>
-
-
-            <!-- TITLE -->
-
-            <h2>
-                GCash QR Code
-            </h2>
-
-
-            <!-- DESCRIPTION -->
+            <h2>Hello! 👋</h2>
 
             <p>
-                Scan to send payment
+                Welcome to my digital NFC card.
+                Connect with me using the links below.
             </p>
-
-
-            <!-- =================================
-                 CLIENT GCASH QR
-
-                 Replace gcash-qr.png
-                 with the client's QR.
-            ================================== -->
-
-            <img src="gcash-qr.png"
-                 alt="PayMaya QR Code"
-                 class="gcash-qr">
-
-
-            <!-- CLIENT NAME -->
-
-            <p class="gcash-name">
-                Kristine Joy Angeles
-            </p>
-
 
         </div>
 
-    </div>
+        <!-- CONTACT / SOCIAL LINKS -->
+        <div class="links">
 
-    <div id="gcash"
-         class="qr-modal">
+            <!-- FACEBOOK -->
+            <a href="https://www.facebook.com/kristine.joy.angeles.2024/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="button">
 
-
-        <!-- QR CARD -->
-
-        <div class="qr-box">
-
-
-            <!-- CLOSE BUTTON -->
-
-            <a href="#"
-               class="qr-close"
-               aria-label="Close">
-
-                &times;
+                <i class="fa-brands fa-facebook"></i>
+                <span>Facebook</span>
 
             </a>
 
+            <!-- INSTAGRAM -->
+            <a href="https://www.instagram.com/_kristinejoyangeles"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="button">
 
-            <!-- TITLE -->
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
 
-            <h2>
-                Union Bank QR Code
-            </h2>
+            </a>
 
+            <!-- GCASH -->
+            <a href="#gcash" class="button">
 
-            <!-- DESCRIPTION -->
+                <i class="fa-solid fa-money-bill-transfer"></i>
+                <span>Send via GCash</span>
 
-            <p>
-                Scan to send payment
-            </p>
+            </a>
 
+            <!-- UNION BANK -->
+            <a href="#union" class="button">
 
-            <!-- =================================
-                 CLIENT GCASH QR
+                <i class="fa-solid fa-building-columns"></i>
+                <span>Send via UnionBank</span>
 
-                 Replace gcash-qr.png
-                 with the client's QR.
-            ================================== -->
-
-            <img src="union-qr.png"
-                 alt="PayMaya QR Code"
-                 class="gcash-qr">
-
-
-            <!-- CLIENT NAME -->
-
-            <p class="gcash-name">
-                Kristine Joy Angeles
-            </p>
-
+            </a>
 
         </div>
 
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        Tap • Connect • Share
+    </footer>
+
+</main>
+
+<!-- GCASH QR POPUP -->
+<div id="gcash" class="qr-modal">
+
+    <div class="qr-box">
+
+        <a href="#" class="qr-close" aria-label="Close">
+            &times;
+        </a>
+
+        <h2>GCash QR Code</h2>
+
+        <p>Scan to send payment</p>
+
+        <!-- Replace with the client's GCash QR image -->
+        <img src="gcash-qr.png"
+             alt="GCash QR Code"
+             class="gcash-qr">
+
+        <p class="gcash-name">
+            Kristine Joy Angeles
+        </p>
+
     </div>
 
+</div>
 
+<!-- UNION BANK QR POPUP -->
+<div id="union" class="qr-modal">
+
+    <div class="qr-box">
+
+        <a href="#" class="qr-close" aria-label="Close">
+            &times;
+        </a>
+
+        <h2>UnionBank QR Code</h2>
+
+        <p>Scan to send payment</p>
+
+        <!-- Replace with the client's UnionBank QR image -->
+        <img src="union-qr.png"
+             alt="UnionBank QR Code"
+             class="gcash-qr">
+
+        <p class="gcash-name">
+            Kristine Joy Angeles
+        </p>
+
+    </div>
+
+</div>
+```
 
 </body>
 
